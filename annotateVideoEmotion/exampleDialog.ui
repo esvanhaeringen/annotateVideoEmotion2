@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>exampleDialog</class>
+ <widget class="QDialog" name="exampleDialog">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>724</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1250</width>
+    <height>662</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout">
+     <property name="spacing">
+      <number>6</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="arousalLb">
+       <property name="text">
+        <string>Arousal:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="arousalCB">
+       <item>
+        <property name="text">
+         <string>Very passive</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Slightly passive</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Neutral</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Slightly active</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Very active</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="valenceLb">
+       <property name="text">
+        <string>Valence:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="valenceCB">
+       <item>
+        <property name="text">
+         <string>Very negative</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Slightly negative</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Neutral</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Slightly positive</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Very positive</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelLb">
+       <property name="text">
+        <string>Emotion label:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="l0">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color:rgb(126, 126, 126);
+	background-color:rgb(222, 222, 222);
+}
+QPushButton:checked {
+	font:bold;
+	font-size:7pt;
+	color:rgb(0, 0, 0);
+	border-top: 2px inset rgb(129, 129, 129);
+	border-left: 2px inset rgb(129, 129, 129);
+	border-bottom: 1px inset rgb(248, 248, 248);
+	border-right: 1px inset rgb(248, 248, 248);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Neutral</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="l1">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color:rgb(125, 98, 98);
+	background-color:rgb(255, 199, 199);
+}
+QPushButton:checked {
+	font:bold;
+	font-size:7pt;
+	color:rgb(0, 0, 0);
+	border-top: 2px inset rgb(129, 129, 129);
+	border-left: 2px inset rgb(129, 129, 129);
+	border-bottom: 1px inset rgb(248, 248, 248);
+	border-right: 1px inset rgb(248, 248, 248);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Anger</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="l2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color:rgb(95, 89, 132);
+	background-color:rgb(184, 171, 255);
+}
+QPushButton:checked {
+	font:bold;
+	font-size:7pt;
+	color:rgb(0, 0, 0);
+	border-top: 2px inset rgb(129, 129, 129);
+	border-left: 2px inset rgb(129, 129, 129);
+	border-bottom: 1px inset rgb(248, 248, 248);
+	border-right: 1px inset rgb(248, 248, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Disgust</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="l3">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color:rgb(91, 127, 89);
+	background-color:rgb(182, 253, 177);
+}
+QPushButton:checked {
+	font:bold;
+	font-size:7pt;
+	color:rgb(0, 0, 0);
+	border-top: 2px inset rgb(129, 129, 129);
+	border-left: 2px inset rgb(129, 129, 129);
+	border-bottom: 1px inset rgb(248, 248, 248);
+	border-right: 1px inset rgb(248, 248, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Enjoyment</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="l4">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color:rgb(129, 100, 59);
+	background-color:rgb(255, 198, 117);
+}
+QPushButton:checked {
+	font:bold;
+	font-size:7pt;
+	color:rgb(0, 0, 0);
+	border-top: 2px inset rgb(129, 129, 129);
+	border-left: 2px inset rgb(129, 129, 129);
+	border-bottom: 1px inset rgb(248, 248, 248);
+	border-right: 1px inset rgb(248, 248, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Fear</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="l5">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color:rgb(126, 95, 114);
+	background-color:rgb(255, 193, 230);
+}
+QPushButton:checked {
+	font:bold;
+	font-size:7pt;
+	color:rgb(0, 0, 0);
+	border-top: 2px inset rgb(129, 129, 129);
+	border-left: 2px inset rgb(129, 129, 129);
+	border-bottom: 1px inset rgb(248, 248, 248);
+	border-right: 1px inset rgb(248, 248, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Sadness</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="l6">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color:rgb(123, 136, 67);
+	background-color:rgb(231, 255, 125);
+}
+QPushButton:checked {
+	font:bold;
+	font-size:7pt;
+	color:rgb(0, 0, 0);
+	border-top: 2px inset rgb(129, 129, 129);
+	border-left: 2px inset rgb(129, 129, 129);
+	border-bottom: 1px inset rgb(248, 248, 248);
+	border-right: 1px inset rgb(248, 248, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Surprise</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="l7">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+	color:rgb(138, 138, 138);
+	background-color:rgb(244, 244, 244);
+}
+QPushButton:checked {
+	font:bold;
+	font-size:7pt;
+	color:rgb(0, 0, 0);
+	border-top: 2px inset rgb(129, 129, 129);
+	border-left: 2px inset rgb(129, 129, 129);
+	border-bottom: 1px inset rgb(248, 248, 248);
+	border-right: 1px inset rgb(248, 248, 248);
+}</string>
+       </property>
+       <property name="text">
+        <string>Unclear</string>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="okButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>OK</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>okButton</sender>
+   <signal>clicked()</signal>
+   <receiver>exampleDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>278</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>96</x>
+     <y>254</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
